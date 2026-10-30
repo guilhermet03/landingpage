@@ -24,16 +24,22 @@ export function Hero() {
                 <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
 
                     <div className="space-y-6 ">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+                        data-aos="fade-down"
+                        >
                         TEXTO PRINCIPAL
                         </h1>
-                        <p className="lg:text-lg">
+                        <p className="lg:text-lg"
+                        data-aos="fade-right">
                         DESCRIÇÃO DO PRODUTO
                         </p>
 
                             <a  
-                            href=""
+                            target="_blank"
+                            href={`https://wa.me/5561998107824?text=Olá vim pelo site e gostaria de mais informações.`}
                             className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center w-fit gap-2"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
                             >
                             <WhatsappLogoIcon/>
                             Contato via Whatsapp
