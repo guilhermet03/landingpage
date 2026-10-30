@@ -1,18 +1,22 @@
 "use client"
 
-import { useEffect } from "react";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import { useEffect } from "react"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
-export function AosInit(){
+export function AosInit() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      Aos.init({
+        duration: 700,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 60,
+      })
+    }, 150)
 
-useEffect(() => {
-    Aos.init({
-        duration: 800,
-        once: true
-    })
+    return () => clearTimeout(timer)
+  }, [])
 
-}, [])
-
-    return null;
+  return null
 }
