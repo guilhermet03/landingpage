@@ -46,7 +46,7 @@ const services = [
 
 export function Services() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
+    loop: true,
     align: "start",
     slidesToScroll: 1,
     breakpoints: {
@@ -78,7 +78,7 @@ export function Services() {
         </p>
 
         <div className="relative" data-aos="fade-up" data-aos-delay="200">
-          <div className="overflow-hidden" ref={emblaRef}>
+          <div className="overflow-hidden pt-2" ref={emblaRef}>
             <div className="flex">
               {services.map((item) => (
                 <div
@@ -138,6 +138,7 @@ export function Services() {
           >
             <ChevronRight className="h-6 w-6 text-gray-700" />
           </button>
+
         </div>
       </div>
     </section>

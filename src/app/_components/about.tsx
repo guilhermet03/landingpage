@@ -22,7 +22,7 @@ export function About() {
                 src={pcImage1}
                 alt="Setup de desenvolvimento com código aberto no computador"
                 fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width: 1024px) 100px, 50px"
                 quality={100}
                 className="object-cover transition duration-500 hover:scale-105"
                 priority

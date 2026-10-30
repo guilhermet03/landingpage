@@ -6,7 +6,6 @@ import { TypewriterCode } from "./typewriter-code"
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-slate-100">
-      {/* grade sutil de fundo */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
@@ -20,7 +19,6 @@ export function Hero() {
             "radial-gradient(ellipse at 70% 40%, black 20%, transparent 75%)",
         }}
       />
-      {/* brilho azul atrás do editor */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 top-10 h-96 w-96 rounded-full bg-blue-600/25 blur-3xl motion-safe:animate-glow"

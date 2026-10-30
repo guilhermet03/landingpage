@@ -51,12 +51,6 @@ export function TypewriterCode() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    if (reduce) {
-      setCount(total)
-      return
-    }
-
     let timer: ReturnType<typeof setTimeout>
     let current = 0
 
@@ -68,12 +62,10 @@ export function TypewriterCode() {
       }
     }
 
-    // pequena pausa antes de começar a digitar
     timer = setTimeout(tick, 900)
     return () => clearTimeout(timer)
   }, [])
 
-  // descobre qual linha está sendo digitada agora
   let active = lines.length - 1
   let acc = 0
   for (let i = 0; i < lines.length; i++) {
@@ -88,7 +80,7 @@ export function TypewriterCode() {
 
   return (
     <div
-      className="rounded-xl border border-slate-700/70 bg-slate-900/90 shadow-2xl shadow-blue-950/40 backdrop-blur motion-safe:animate-float"
+      className="rounded-xl border border-slate-700/70 bg-slate-900/90 shadow-2xl shadow-blue-950/40 backdrop-blur animate-float"
       role="img"
       aria-label="Trecho de código em TypeScript: um objeto dev com nome, stack e entrega, seguido da chamada dev.criarSite para sua empresa."
     >
@@ -126,7 +118,7 @@ export function TypewriterCode() {
                   )
                 })}
                 {i === active && (
-                  <span className="ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-sky-400 motion-safe:animate-blink" />
+                  <span className="ml-0.5 inline-block h-4 w-2 translate-y-0.5 bg-sky-400 animate-blink" />
                 )}
               </code>
             </div>
