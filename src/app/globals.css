@@ -176,3 +176,8 @@ html {
     scroll-behavior: auto;
   }
 }
+
+html,
+body {
+  overflow-x: clip;
+  }
