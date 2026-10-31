@@ -9,7 +9,7 @@ const stack = ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"]
 
 export function About() {
   return (
-    <section className="bg-slate-900 py-20 text-slate-100">
+    <section id="sobre" className="bg-slate-900 py-20 text-slate-100">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div
@@ -22,7 +22,7 @@ export function About() {
                 src={pcImage1}
                 alt="Setup de desenvolvimento com código aberto no computador"
                 fill
-                sizes="(max-width: 1024px) 100px, 50px"
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 quality={100}
                 className="object-cover transition duration-500 hover:scale-105"
                 priority

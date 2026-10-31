@@ -7,7 +7,7 @@ import { whatsappLink } from "@/lib/contact"
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-800 bg-slate-900 py-16 text-slate-100">
+    <footer id="contato" className="border-t border-slate-800 bg-slate-900 py-16 text-slate-100">
       <div className="container mx-auto px-4">
         <div
           className="mb-12 mt-5 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"

@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from "react"
 
-type Token = { text: string; className?: string }
+type Token = {
+  text: string; 
+  className?: string 
+}
 
 const kw = "text-sky-400"
 const str = "text-emerald-400"
