@@ -14,7 +14,7 @@ export function Footer() {
           data-aos="fade-up"
         >
           <div>
-            <h3 className="mb-2 text-2xl font-semibold">Seu Nome</h3>
+            <h3 className="mb-2 text-2xl font-semibold">NexBite</h3>
             <p className="mb-4 max-w-sm text-slate-400">
               Desenvolvedor web. Crio sites, sistemas e servidores para empresas
               que querem aparecer na internet e vender mais.
